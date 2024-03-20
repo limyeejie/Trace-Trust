@@ -1,5 +1,5 @@
 ## TRACE TRUST WEBSITE
-This website platform is designed by team Syntax Squad from UOW Malaysia KDU Penang University College to raise awareness about financial fraud and provide tools to detect fraudulent activities. It consists of several main features available to all users.
+This website platform is designed by team SyntaxSquad from UOW Malaysia KDU Penang University College to raise awareness about financial fraud and provide tools to detect fraudulent activities. It consists of several main features available to all users.
 
 ## Built With
 - HTML
