@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <!--logo-->
+            <div class="logo-container"><img src="logo.jpg" alt="Logo" class="logo"></div>
+
+            <!--add toggle button (button with 3 lines)-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarCollapse" class="navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="homepage.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="discussion.html" class="nav-link">Discussion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="detection.html" class="nav-link">Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blacklist.html" class="nav-link">Blacklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fraud-tactics.html" class="nav-link">Fraud Tactics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sign-up.html" class="nav-link">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+    <div class="row-signInUp">
+        <div class="column-signInUp">
+            <div class="content-signInUp">
+                <div class="form">
+                    <!--sign up-->
+                    <h2 style="text-align: center;color: darkblue;margin-top: 0px;"> SIGN UP </h2>
+                    <h4 style="text-align: center;color: darkblue;margin-top: 0px;"> Welcome to Trace Trust </h4>
+                    <p class="required-note">Required fields are marked with an asterisk *</p>
+                    <form id="form">
+                        <div style="clear:both;">
+                            <!--email-->
+                            <label style="float:left;width:200px;">* Email</label>
+                            <input type="email" id="email" name="email" class="input-gap" style="float: left;width:300px;">
+                            <span id="s1" class="error-message"></span>
+                        </div>
+                        <br>
+                        <div style="clear:both;">
+                            <!--password-->
+                            <label style="float:left;width:200px;">* Password</label>
+                            <input type="password" id="password" name="password" class="input-gap" style="float: left;width:300px;">
+                            <span id="s2" class="error-message"></span>
+                        </div>
+                        <br>
+                        <div style="clear:both;">
+                            <!--confirm password-->
+                            <label style="float:left;width:200px;">* Confirm Password</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" class="input-gap" style="float: left;width:300px;">
+                            <span id="s7" class="error-message"></span>
+                        </div>
+                        <br>
+                        <div style="clear:both;">
+                            <!--radio button / option button-->
+                            <label style="float:left;width:200px;">* Gender</label> <!--only pick 1 for gender-->
+                            <input type="radio"name="gender" id="gender1">Male
+                            <input type="radio"name="gender" id="gender2">Female
+                            <input type="radio"name="gender" id="gender3">Other
+                            <span id="s5" class="error-message"></span>
+                        </div>
+                        <br>
+                        <div style="clear: both;">
+                            <input type="submit" value="Sign Up" style= "background-color:darkgreen; border-radius:5px; color:white;margin-top: 10px; margin-left: 200px; padding-top: 5px 10px; font-size: 18px; border:none; float: left;" onclick="validateForm()">
+                        </div>
+                        <br><br><br>
+                        <div style="clear:both;">
+                            <p>Already have an account ? Click <a href="login.html" style="color: darkblue; text-decoration: none; font-weight: bold;">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy;2024 Trace Trust All rights reserved.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="sign-up.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    overflow: auto;
+    background-color:darkblue !important;
+}
+.logo-container {
+    display: flex;
+    align-items:center;
+}
+.logo {
+    height: 55px;
+    width: 55px;
+    margin-right: 20px;
+    border: none;
+}
+.navbar{
+    background-color:lightsteelblue;
+}
+.footer{
+    color:darkblue;
+    text-align: center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin:auto;
+    font-style:italic;
+    font-size:16px;
+    background-color: lightsteelblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-center {
+    border: 2px solid #00008b; /* You can adjust the color and thickness as needed */
+    padding: 20px; /* Add some padding for spacing */
+}
+/* Sliders */
+.slider {
+    position:relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    z-index: 0;
+    top:80px;
+}
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0px;
+    width: 30%;
+    height: 100%;
+    background: rgba(176, 196, 222, 0.5); /* light steel blue with 50% transparency */
+    z-index: 1; /* this should be lower than the z-index of the buttons */
+}
+.slides {
+    display: flex;
+}
+.slides img {
+    width: 100%;
+    height:500px;
+    margin:0;
+    border: none;
+    padding:0;
+}
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+h2.second-header {
+    font-style: italic;
+    font-size: 20px; /* adjust this value to make the text smaller or larger */
+    text-decoration: underline;
+}
+.overlay-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: darkblue;
+    text-decoration: none;
+    border-radius: 10px; /* Round the corners */
+    box-sizing: border-box; /* Make sure padding and border are included in the element's total width and height */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.overlay-button:hover {
+    background-color: darkblue;
+    color: white;
+}
+.typing {
+    opacity: 0;
+    animation: typing 0.1s forwards;
+  }
+  
+  @keyframes typing {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }  
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2; /* this should be higher than the z-index of the overlay */
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 7px;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 18px 23px;
+    border-radius: 50%;
+    display: none;
+    text-align: center; /* Add this line to center the text horizontally */
+    line-height: 20px; /* Add this line to center the text vertically. Adjust as needed. */
+    font-weight: bold !important; /* Add this line to make the text bold */
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  .glow {
+    transition: box-shadow .5s ease-in-out;
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  }    
+
+/*Fraud tactics page*/
+.ft-row {
+    background-color:lightcyan; /* Add this line */
+    margin-bottom: 50px;
+    margin-top: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px; /* Add padding to give some space around the content */
+    border-radius: 10px;
+}
+
+/* Define two different styles for alternating rows */
+.ft-container:nth-child(odd) {
+    background-color: turquoise; /* First, third, fifth, etc. (odd) rows will be turquoise */
+}
+
+.ft-container:nth-child(even) {
+    background-color:cornflowerblue; /* Second, fourth, sixth, etc. (even) rows will be rgb(251, 207, 153) */
+}
+
+/* Style for the container */
+.ft-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the questions */
+.ft-container:nth-child(odd) h3{
+    font-size: larger; /* Make the question text larger */
+    font-weight: bold; /* Make the question text bold */
+    color: darkblue; /* Make the question text maroon */
+}
+
+/* Style for the answers */
+.ft-container:nth-child(odd) p{
+    color: darkblue; /* Make the answer text maroon */
+}
+
+/* Style for the questions */
+.ft-container:nth-child(even) h3{
+    font-size: larger; /* Make the question text larger */
+    font-weight: bold; /* Make the question text bold */
+    color:white; /* Make the question text maroon */
+}
+
+/* Style for the answers */
+.ft-container:nth-child(even) p{
+    color: white; /* Make the answer text maroon */
+}
+
+/*Login, sign up, forgot password page*/
+.content-signInUp{
+    text-align:left;
+    margin:0 auto;
+    align-items:center;
+    flex:1;
+    padding:20px;
+}
+.required-note{
+    color:darkblue;
+    text-align:center!important;
+    font-style:italic!important;
+    font-size: small;
+    padding-bottom: 15px!important;
+}
+.input-gap{
+    margin-bottom:20px;
+}
+.signInUp-container{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+.row-signInUp{
+    display:flex;
+    justify-content: center; /* Add this line to center the child elements */
+}
+.column-signInUp{
+    background-color:powderblue;
+    width: 560px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 30px;
+}
+/*use for both side of login and sign up*/
+.column-bothSide{
+    flex:1;
+    padding:0px;
+    overflow:auto;
+}
+/* Style for error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display:inline-block;
+    font-style:italic;
+}
+.line {
+    height: 10px; /* adjust this value to change the thickness of the lines */
+    margin: 10px 0; /* adjust these values to change the space around the lines */
+    margin-bottom: 3px;
+}
+.blue-line{
+    background-color: lightskyblue;
+}
+.white-line{
+    background-color: white;
+}
+/*discussion.html*/
+.columnDiscussion{
+    background-color:powderblue;
+    width: 560px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 30px;
+}
+#discussionSection{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color:lightblue;
+    border-radius: 10px;
+}
+.discussion {
+    display: flex;
+    align-items: center;
+    border: 1px solid darkolivegreen;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*about us*/
+.about-image {
+    width: 25%;
+    height: 25%;
+    object-fit:contain;
+    animation: fadeIn 3s ease-in;
+    border:none;
+    border-radius: 50px;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.about-row {
+    background-color:aquamarine; /* Add this line */
+    margin-bottom: 50px;
+    margin-top: none;
+    margin-right: 100px;
+    margin-left: 30px;
+    padding: 20px; /* Add padding to give some space around the content */
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.about-container {
+    animation: fadeIn 2s;
+    display: block;
+    justify-content: space-between;
+    align-items:center;
+    background-color:lightcyan;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    transition: transform 0.3s ease-in-out; /* smooth hover effect */
+}
+.about-container:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add this line to give some space between projects */
+}
+.about-details {
+    width: 70%;
+    display: flex;
+    height: 300px; /* Add this line */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto; /* Add this line */
+}
+/* New class for even sections */
+.about-row-even {
+    background-color:aquamarine; /* Add this line */
+    margin-bottom: 50px;
+    margin-top: none;
+    margin-right: 30px;
+    margin-left: 100px;
+    padding: 20px; /* Add padding to give some space around the content */
+    border-radius: 10px;
+}
+.about-even {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-even .about-image {
+    order: 1;
+}
+
+.about-even .about-details {
+    order: 2;
+}

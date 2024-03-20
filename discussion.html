@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <!--logo-->
+            <div class="logo-container"><img src="logo.jpg" alt="Logo" class="logo"></div>
+
+            <!--add toggle button (button with 3 lines)-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarCollapse" class="navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="homepage.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="discussion.html" class="nav-link">Discussion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="detection.html" class="nav-link">Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blacklist.html" class="nav-link">Blacklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fraud-tactics.html" class="nav-link">Fraud Tactics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sign-up.html" class="nav-link">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <!--welcome section-->
+    <div class="text-center" style="color:white">
+        <br><br>
+        <h1 class="fw-bold">DISCUSSION</h1>
+        <p class="lead">Share your experience here !</p>
+        <p class="lead">Don't forget to report to the police too !</p>
+    </div>
+
+    <div class="line white-line"></div>
+    <div class="line blue-line"></div>
+
+    <div class="row-signInUp">
+        <div class="columnDiscussion">
+            <form id="form">
+                <h2 style="text-align: center; color:darkblue; margin-top: 0px; font-weight: bold;">DISCUSSION</h2>
+                <p class="required-note">Required fields are marked with an asterisk *</p>
+                <div style="clear:both;">
+                    <!--username-->
+                    <label style="float:left;width:200px;">* Username</label>
+                    <input type="text" id="username" name="username" class="input-gap" style="float: left;">
+                    <span id="s1" class="error-message"></span>
+                </div>
+                <div style="clear:both;">
+                    <!--discussion-->
+                    <label style="float: left; width: 200px;">* Share your experience</label>
+                    <textarea type="text" cols="44" rows="5" id="discussion" class="input-gap" style="float: left;"></textarea>
+                    <span id="s3" class="error-message"></span>
+                </div>
+                <div style="clear: both;">
+                    <div class="decision">
+                        <a href="homepage.html" class="cancel-link">Cancel</a>
+                        <input type="button" value="Submit" onclick="submitForm()" class="btn" style="margin-top: 50px; margin-left: 125px; padding-top: 5px 10px; font-size: 16px; float: left; background-color: darkgreen; color:white;">
+                        <input type="button" value="Clear" onclick="clearForm()" class="btn" style="margin-top: 50px; margin-left: 35px; padding-top: 5px 10px; font-size: 16px; float: left; background-color: darkgreen; color:white;">
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div><br>
+
+    <div class="line blue-line"></div>
+    <div class="line white-line"></div>
+    <br><br>
+
+    <div>
+        <h2 style="text-align: center;color: white;font-weight: bold;">DISCUSSION SECTION</h2>
+        <div id="discussionSection"></div>
+    </div>
+
+    <a href="#" id="back-to-top" title="Back to Top">&uarr;</a>
+    <br><br><br><br>
+    <div class="footer">
+        <p>&copy;2024 Trace Trust All rights reserved.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="back-to-top.js"></script>
+    <script src="discussion.js"></script>
+</body>
+</html>
